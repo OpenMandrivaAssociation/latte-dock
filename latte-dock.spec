@@ -30,6 +30,8 @@ BuildRequires:  cmake(KF5Crash)
 BuildRequires:  cmake(KF5WindowSystem)
 BuildRequires:  cmake(Qt5X11Extras)
 BuildRequires:  pkgconfig(xcb)
+BuildRequires:	pkgconfig(xcb-event)
+BuildRequires:	pkgconfig(sm)
 
 %description
 Latte is a dock based on plasma frameworks that provides 
