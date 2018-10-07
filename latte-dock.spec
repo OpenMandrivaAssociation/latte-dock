@@ -1,6 +1,6 @@
 Name:		latte-dock
 Summary:	Latte is a dock based on plasma frameworks
-Version:	0.7.5
+Version:	0.8.1
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -65,3 +65,8 @@ zoom effect and tries to be there only when it is needed.
 %{_datadir}/kservices5/*.desktop
 %{_datadir}/knotifications5/lattedock.notifyrc
 %{_datadir}/dbus-1/interfaces/org.kde.LatteDock.xml
+%{_sysconfdir}/xdg/latte-layouts.knsrc
+%{_libdir}/qt5/plugins/plasma_containmentactions_lattecontextmenu.so
+%{_datadir}/kwin/scripts/activatelattelaunchermenu
+
+
