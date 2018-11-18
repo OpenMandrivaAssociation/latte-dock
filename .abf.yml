@@ -1,5 +1,6 @@
 removed_sources:
   latte-dock-0.7.4.tar.xz: f31bc6fd8acc85f6ce16367b04070d13763fb0d9
   latte-dock-0.7.5.tar.xz: a11c6d881c503e0b68606fcb0c2787ed1bd7ab44
-sources:
   latte-dock-0.8.1.tar.xz: 55b57e4dbbbfc945a28b3b380de00d223d6274a2
+sources:
+  latte-dock-0.8.2.tar.xz: 07841d31ece6b9b6e48c1155d24967d661fbe010
