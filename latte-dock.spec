@@ -1,11 +1,12 @@
 Name:		latte-dock
 Summary:	Latte is a dock based on plasma frameworks
-Version:	0.8.8
+Version:	0.9.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		http://www.aelog.org/
 Source0:	http://download.kde.org/stable/latte-dock/%{name}-%{version}.tar.xz
+Patch0:		latte-dock-0.9.0-clang9.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)
@@ -40,7 +41,7 @@ plasmoids. It animates its contents by using parabolic
 zoom effect and tries to be there only when it is needed.
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
@@ -53,11 +54,14 @@ zoom effect and tries to be there only when it is needed.
 
 %files -f %{name}.lang
 %doc README.md
+%{_sysconfdir}/xdg/latte-indicators.knsrc
+%{_libdir}/qt5/plugins/kpackage/packagestructure/latte_packagestructure_indicator.so
+%{_datadir}/kservicetypes5/latte-indicator.desktop
+%{_datadir}/latte
 %{_bindir}/%{name}
 %{_libdir}/qt5/qml/org/kde/latte
 %{_datadir}/plasma/shells/org.kde.latte.shell
 %{_datadir}/plasma/plasmoids/org.kde.latte.*
-%{_datadir}/plasma/plasmoids/audoban.applet.separator
 %{_datadir}/metainfo/*.appdata.xml
 %{_datadir}/applications/org.kde.latte-dock.desktop
 %{_iconsdir}/hicolor/*/apps/*.svg
@@ -67,6 +71,3 @@ zoom effect and tries to be there only when it is needed.
 %{_datadir}/dbus-1/interfaces/org.kde.LatteDock.xml
 %{_sysconfdir}/xdg/latte-layouts.knsrc
 %{_libdir}/qt5/plugins/plasma_containmentactions_lattecontextmenu.so
-%{_datadir}/kwin/scripts/activatelattelaunchermenu
-
-

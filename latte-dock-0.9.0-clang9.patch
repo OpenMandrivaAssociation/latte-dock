@@ -1,0 +1,24 @@
+diff -up latte-dock-0.9.0/app/settings/delegates/persistentmenu.cpp.omv~ latte-dock-0.9.0/app/settings/delegates/persistentmenu.cpp
+--- latte-dock-0.9.0/app/settings/delegates/persistentmenu.cpp.omv~	2019-08-03 22:42:42.742878313 +0200
++++ latte-dock-0.9.0/app/settings/delegates/persistentmenu.cpp	2019-08-03 22:42:45.737837225 +0200
+@@ -20,7 +20,7 @@
+ #include "persistentmenu.h"
+ 
+ 
+-PersistentMenu::PersistentMenu(QWidget *parent = 0)
++PersistentMenu::PersistentMenu(QWidget *parent)
+     : QMenu (parent),
+       m_blockHide(false)
+ {
+diff -up latte-dock-0.9.0/app/settings/delegates/persistentmenu.h.omv~ latte-dock-0.9.0/app/settings/delegates/persistentmenu.h
+--- latte-dock-0.9.0/app/settings/delegates/persistentmenu.h.omv~	2019-08-03 22:42:55.127708496 +0200
++++ latte-dock-0.9.0/app/settings/delegates/persistentmenu.h	2019-08-03 22:42:58.132667330 +0200
+@@ -28,7 +28,7 @@ class PersistentMenu : public QMenu
+ {
+   Q_OBJECT
+ public:
+-  PersistentMenu(QWidget *parent);
++  PersistentMenu(QWidget *parent = 0);
+ 
+ protected:
+   void setVisible (bool visible) override;
