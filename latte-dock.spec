@@ -6,7 +6,6 @@ Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		http://www.aelog.org/
 Source0:	http://download.kde.org/stable/latte-dock/%{name}-%{version}.tar.xz
-Patch0:		latte-dock-0.9.0-clang9.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)
