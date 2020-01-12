@@ -1,11 +1,12 @@
 Name:		latte-dock
 Summary:	Latte is a dock based on plasma frameworks
 Version:	0.9.7
-Release:	1
+Release:	2
 Group:		Graphical desktop/KDE
 License:	GPLv2
-Url:		http://www.aelog.org/
+Url:		https://github.com/psifidotos/Latte-Dock
 Source0:	http://download.kde.org/stable/latte-dock/%{name}-%{version}.tar.xz
+Patch0:		latte-dock-default-config.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)

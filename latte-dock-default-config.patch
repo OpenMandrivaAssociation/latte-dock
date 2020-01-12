@@ -1,0 +1,51 @@
+diff -up latte-dock-0.9.7/shell/package/contents/presets/Default.layout.latte.omv~ latte-dock-0.9.7/shell/package/contents/presets/Default.layout.latte
+--- latte-dock-0.9.7/shell/package/contents/presets/Default.layout.latte.omv~	2020-01-12 01:56:49.265020258 +0100
++++ latte-dock-0.9.7/shell/package/contents/presets/Default.layout.latte	2020-01-12 02:12:42.079974030 +0100
+@@ -23,19 +23,45 @@ plugin=org.kde.latte.plasmoid
+ 
+ [Containments][1][Applets][2][Configuration][General]
+ isInLatteDock=true
+-launchers59=applications:firefox.desktop,applications:org.kde.dolphin.desktop
++launchers59=applications:org.kde.falkon.desktop,applications:org.kde.dolphin.desktop
+ 
+ [Containments][1][Applets][3]
+ immutability=1
+ plugin=org.kde.plasma.analogclock
+ 
++[Containments][1][Applets][4]
++immutability=1
++plugin=org.kde.plasma.folder
++
++[Containments][1][Applets][4][Configuration]
++plugin=org.kde.plasma.folder
++wallpaperplugin=org.kde.image
++
++[Containments][1][Applets][4][Configuration][General]
++url=recentdocuments://
++icon=folder-recent
++useCustomIcon=true
++
++[Containments][1][Applets][5]
++immutability=1
++plugin=org.kde.plasma.folder
++
++[Containments][1][Applets][5][Configuration]
++plugin=org.kde.plasma.folder
++wallpaperplugin=org.kde.image
++
++[Containments][1][Applets][5][Configuration][General]
++url=trash://
++icon=user-trash
++useCustomIcon=true
++
+ [Containments][1][ConfigDialog]
+ DialogHeight=600
+ DialogWidth=586
+ 
+ [Containments][1][General]
+ advanced=false
+-appletOrder=2;3
++appletOrder=2;3;4
+ panelSize=10
+ shadowOpacity=60
+ shadowSize=45
