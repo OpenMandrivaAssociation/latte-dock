@@ -34,6 +34,12 @@ BuildRequires:  cmake(Qt5X11Extras)
 BuildRequires:  pkgconfig(xcb)
 BuildRequires:	pkgconfig(xcb-event)
 BuildRequires:	pkgconfig(sm)
+BuildRequires:	qt5-qtgraphicaleffects
+Requires:	qt5-qtgraphicaleffects
+BuildRequires:	qt5-qtquickcontrols
+Requires:	qt5-qtquickcontrols
+BuildRequires:	plasma-framework
+Requires:	plasma-framework
 
 %description
 Latte is a dock based on plasma frameworks that provides 
