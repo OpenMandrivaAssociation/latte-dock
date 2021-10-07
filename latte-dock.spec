@@ -6,7 +6,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		https://github.com/psifidotos/Latte-Dock
 Source0:	http://download.kde.org/stable/latte-dock/%{name}-%{version}.tar.xz
-Patch0:		latte-dock-default-config.patch
+#Patch0:		latte-dock-default-config.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)
