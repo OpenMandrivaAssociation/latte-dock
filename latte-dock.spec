@@ -62,7 +62,7 @@ zoom effect and tries to be there only when it is needed.
 
 %files -f %{name}.lang
 %doc README.md
-%{_sysconfdir}/xdg/latte-indicators.knsrc
+#{_sysconfdir}/xdg/latte-indicators.knsrc
 %{_libdir}/qt5/plugins/kpackage/packagestructure/latte_packagestructure_indicator.so
 %{_datadir}/kservicetypes5/latte-indicator.desktop
 %{_datadir}/latte
