@@ -79,3 +79,5 @@ zoom effect and tries to be there only when it is needed.
 %{_datadir}/dbus-1/interfaces/org.kde.LatteDock.xml
 #{_sysconfdir}/xdg/latte-layouts.knsrc
 %{_libdir}/qt5/plugins/plasma_containmentactions_lattecontextmenu.so
+%{_datadir}/knsrcfiles/latte-indicators.knsrc
+%{_datadir}/knsrcfiles/latte-layouts.knsrc
