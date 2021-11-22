@@ -77,5 +77,5 @@ zoom effect and tries to be there only when it is needed.
 %{_datadir}/kservices5/*.desktop
 %{_datadir}/knotifications5/lattedock.notifyrc
 %{_datadir}/dbus-1/interfaces/org.kde.LatteDock.xml
-%{_sysconfdir}/xdg/latte-layouts.knsrc
+#{_sysconfdir}/xdg/latte-layouts.knsrc
 %{_libdir}/qt5/plugins/plasma_containmentactions_lattecontextmenu.so
