@@ -1,6 +1,6 @@
 Name:		latte-dock
 Summary:	Latte is a dock based on plasma frameworks
-Version:	0.10.5
+Version:	0.10.6
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
